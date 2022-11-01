@@ -31,7 +31,7 @@ for sent in nltk_data[:2]:
     
     
     # split data into training and validation set in the ratio 80:20
-train_set,test_set =train_test_split(nltk_data,train_size=0.80,test_size=0.20,random_state = 101)
+     train_set,test_set =train_test_split(nltk_data,train_size=0.80,test_size=0.20,random_state = 101)
 
 
 
@@ -80,7 +80,7 @@ def t2_given_t1(t2, t1, train_bag = train_tagged_words):
     return (count_t2_t1, count_t1)
     
     
-     creating t x t transition matrix of tags, t= no of tags
+ creating t x t transition matrix of tags, t= no of tags
 # Matrix(i, j) represents P(jth tag after the ith tag)
  
 tags_matrix = np.zeros((len(tags), len(tags)), dtype='float32')
